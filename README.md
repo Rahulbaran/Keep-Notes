@@ -1,2 +1,2 @@
 # Keep-Notes
-A  Note taking web application📝
+It is a note taking application📝.
