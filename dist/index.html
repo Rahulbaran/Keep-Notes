@@ -27,7 +27,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Lato&family=New+Rocker&display=swap"
+            href="https://fonts.googleapis.com/css2?family=New+Rocker&family=Heebo:wght@400;500&display=swap"
             rel="stylesheet" />
 
         <!-------------------- CSS Custom Stylesheet --------------------->
@@ -36,5 +36,74 @@
         <!---------------------- JS Custom File --------------------------->
         <script src="minjs/script.js" defer></script>
     </head>
-    <body></body>
+    <body>
+        <div class="theme--color--switcher">
+            <p>Light</p>
+            <div class="theme__color">
+                <span class="theme__ball"></span>
+            </div>
+            <p>Dark</p>
+        </div>
+        <main class="notes--main">
+            <h1 class="main__heading">Keep Notes</h1>
+
+            <form class="note__entry__form">
+                <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="text__field"
+                    placeholder="enter item name"
+                    required="required"
+                    max="50"
+                    min="1" />
+
+                <button type="submit" class="note__add__btn">
+                    <span class="material-icons"> add </span>
+                </button>
+            </form>
+
+            <div class="notes__container">
+                <div class="note" id="note-0">
+                    <div class="note__content">
+                        <p>Mango</p>
+                        <button class="delete__note__btn" title="Delete Note">
+                            <span class="material-icons">delete_forever</span>
+                        </button>
+                    </div>
+                    <h5 class="note__added__date">25th Dec 2021</h5>
+                </div>
+
+                <div class="note" id="note-1">
+                    <div class="note__content">
+                        <p>Tomato</p>
+                        <button class="delete__note__btn" title="Delete Note">
+                            <span class="material-icons">delete_forever</span>
+                        </button>
+                    </div>
+                    <h5 class="note__added__date">25th Dec 2021</h5>
+                </div>
+
+                <div class="note" id="note-2">
+                    <div class="note__content">
+                        <p>Chicken Briyani</p>
+                        <button class="delete__note__btn" title="Delete Note">
+                            <span class="material-icons">delete_forever</span>
+                        </button>
+                    </div>
+                    <h5 class="note__added__date">25th Dec 2021</h5>
+                </div>
+
+                <div class="note" id="note-3">
+                    <div class="note__content">
+                        <p>Sweet Potato</p>
+                        <button class="delete__note__btn" title="Delete Note">
+                            <span class="material-icons">delete_forever</span>
+                        </button>
+                    </div>
+                    <h5 class="note__added__date">25th Dec 2021</h5>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
