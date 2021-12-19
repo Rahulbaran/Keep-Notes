@@ -1,2 +1,2 @@
-
+"use strict";const AppModule={},UIModule={},EventModule={changeMode(){const e=document.querySelector(".theme__toggler");let t=!1;e.onclick=function(){t?(document.documentElement.className="light--theme",this.classList.remove("translate"),t=!1,localStorage.removeItem("theme")):(document.documentElement.className="dark--theme",this.classList.add("translate"),t=!0,localStorage.setItem("theme","dark"))},window.onload=function(){localStorage.getItem("theme")&&(document.documentElement.className="dark--theme",e.classList.add("translate"),t=!0)}},init(){this.changeMode()}};EventModule.init();
 //# sourceMappingURL=script.js.map

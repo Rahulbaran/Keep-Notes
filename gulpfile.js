@@ -20,8 +20,8 @@ const scssTask = function () {
 //js Task
 const jsTask = function () {
     return src("dist/js/*.js")
-        .pipe(terser())
         .pipe(srcMaps.init())
+        .pipe(terser())
         .pipe(srcMaps.write("."))
         .pipe(dest("./dist/minjs"));
 };
